@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>Tambdi Surla</title>
+    <!-- Bootstrap Core CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
+    <!-- Custom Fonts -->
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css" type="text/css">
+    <!-- Plugin CSS -->
+    <link rel="stylesheet" href="css/animate.min.css" type="text/css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/places.css" type="text/css">
+       <link href="css/simple-sidebar.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/placestyle.css"/>
+    <link rel="stylesheet" type="text/css" href="css/placestyle.css"/>
+</head>
+       <body id="page-top" scroll="no" style="overflow-y: scroll; overflow-x: hidden">
+        <div id="wrapper">
+
+        <!-- Sidebar -->
+  <div id="sidebar-wrapper" style="overflow-y: hidden; overflow-x: hidden">
+            <ul class="sidebar-nav">
+                <li class="sidebar-brand">
+                    <a href="#">
+                    </a>
+                </li>
+                <li>
+                    <a href="/"><h4>Home</h4></a>
+                </li>
+                <li>
+                     <a href="/about"><h4>About</h4></a>
+                </li>
+                <li>
+                    <a href="/explore"><h4>Explore</h4></a>
+                </li>
+                <li>
+                    <a href="/contact"><h4>Contact Us</h4></a>
+                </li>
+                <br><br><br><br><br><br><br><br><br><br><br><br>
+                 <li>
+               <h5><a href="/rent_bike"><img src="img/rent.png"></a></h5>
+                </li>
+            </ul>
+        </div>
+    <nav id="mainNav" class="navbar navbar-default navbar-fixed-top" style=" border-bottom-width: 0px";>
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand page-scroll" href="#menu-toggle" id="menu-toggle" ><span id="main_icon"  class="glyphicon glyphicon-align-justify"></span>&nbsp;&nbsp;&nbsp;GOexplorAr</a>
+            </div>
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                   <div class="search_box pull-right" ;>
+							<input type="text" placeholder="Search"/>
+						</div>
+                    <li>
+                        <a class="page-scroll" href="{{links}}">{{userAcc}}</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+<div class="path">
+     <div class="pad border-b">
+         <a href="/" title="GOexplorAr">Home</a>
+         &nbsp;/&nbsp;
+        <a href="/sightseeing" title="Sightseeing">Sightseeing</a>
+             &nbsp;/&nbsp;
+         <a href="/religious" title="Religion & Spirituality">Religion & Spirituality</a>
+             &nbsp;/&nbsp;
+         <span>Tambdi Surla Temple</span>
+        
+         </div>
+     </div>
+      <div class="title">
+         <p class="title">Tambdi Surla Temple</p>
+         </div>
+         <hr style="max-width: 1300px;">
+     <aside id="info">
+           <div class="txt">
+               <div class="txt">
+                   <p>
+                       <b>
+                           <img src="img/categories/sight/safa.jpg" width="306" height="204" style="padding-right: 10px;padding-left:10px; float: left;" title="Old Goa Church" alt="">
+One of the only two sixteenth-century Islamic monuments which managed to survive the excesses of the Inquisition, the Safa Masjid lies 2 km west of the centre of the town of Ponda, in a district known as Shahpur. The elegant structure was built in 1560 by Ibrahim Adil Shah, the Sultan of Bijapur.
+alt
+ The mosque was the focus of attention in a fairly extensive complex of gardens and fountains which lies in ruins today. The rectangular prayer hall of the mosque rests above a high base and is capped with a pointed terracota tile roof.
+
+There are elegant Islamic arches decorating the walls. Remnants of octagonal pillars can be seen all around the mosque, perhaps these supported a covered courtyard to provide shade to worshippers.
+
+There is a is well-constructed water tank with small chambers with 'meharab' designs nearby which is located to the south of the prayer hall unlike most mosques where it is located outside the main entrance.
+
+This has led to speculation that the tank may have been part of another religious structure which once stood there. Local legend also has it that there are hidden tunnels in the walls of the tank which connect it to a nearby water reservoir.
+
+This mosque is a venue of celebration during festivals of Id-Ul-Fitr and Id-Ul-Zuha, by the local Muslim community. There are rickshaws available at the main Ponda bus stand which can take you to the site of the Safa Masjid.
+ 
+Namazgah
+This mosque is located in the Ponda area through the attractive countryside a further 2 or 3 km from the Safa Masjid.
+
+     </aside>
+ <section id="dvMap">
+<script>
+function initMap() {
+  var yourlocation = {lat: 15.4947829, lng: 73.835833};
+  var destination = {lat: 15.4066192, lng: 73.9997376};
+
+  var map = new google.maps.Map(document.getElementById('dvMap'), {
+    center: yourlocation,
+    scrollwheel: false,
+    zoom: 7
+  });
+
+  var directionsDisplay = new google.maps.DirectionsRenderer({
+    map: map
+  });
+
+  // Set destination, origin and travel mode.
+  var request = {
+    destination: destination,
+    origin: yourlocation,
+    travelMode: google.maps.TravelMode.DRIVING
+  };
+
+  // Pass the directions request to the directions service.
+  var directionsService = new google.maps.DirectionsService();
+  directionsService.route(request, function(response, status) {
+    if (status == google.maps.DirectionsStatus.OK) {
+      // Display the route on the map.
+      directionsDisplay.setDirections(response);
+    }
+  });
+}
+
+    </script>
+         <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC13LD-1oMTmWYl70AdDzM1P7Zg-SofnYg&signed_in=true&callback=initMap"
+        async defer></script>
+                   </section>
+     <section id="dvMap">
+                   </section>
+                   <div class="places" scroll="no" style="overflow-y: scroll; overflow-x: hidden">
+                        <div class="places-title">
+            </div>
+        </div>
+    </div>
+    </div>
+
+         <div id="places">
+         <div class="title">
+         <p class="title" "text-center">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Gallery</p>
+         </div>
+         <hr style="max-width: 1150px;">
+         
+             <script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>
+    <script type="text/javascript" src="js/jssor.slider.mini.js"></script>
+    <!-- use jssor.slider.debug.js instead for debug -->
+    <script>
+        jQuery(document).ready(function ($) {
+            
+            var jssor_1_SlideshowTransitions = [
+              {$Duration:1200,x:0.3,$During:{$Left:[0.3,0.7]},$Easing:{$Left:$Jease$.$InCubic,$Opacity:$Jease$.$Linear},$Opacity:2},
+              {$Duration:1200,x:-0.3,$SlideOut:true,$Easing:{$Left:$Jease$.$InCubic,$Opacity:$Jease$.$Linear},$Opacity:2},
+              {$Duration:1200,x:-0.3,$During:{$Left:[0.3,0.7]},$Easing:{$Left:$Jease$.$InCubic,$Opacity:$Jease$.$Linear},$Opacity:2},
+              {$Duration:1200,x:0.3,$SlideOut:true,$Easing:{$Left:$Jease$.$InCubic,$Opacity:$Jease$.$Linear},$Opacity:2},
+              {$Duration:1200,y:0.3,$During:{$Top:[0.3,0.7]},$Easing:{$Top:$Jease$.$InCubic,$Opacity:$Jease$.$Linear},$Opacity:2},
+              {$Duration:1200,y:-0.3,$SlideOut:true,$Easing:{$Top:$Jease$.$InCubic,$Opacity:$Jease$.$Linear},$Opacity:2},
+              {$Duration:1200,y:-0.3,$During:{$Top:[0.3,0.7]},$Easing:{$Top:$Jease$.$InCubic,$Opacity:$Jease$.$Linear},$Opacity:2},
+              {$Duration:1200,y:0.3,$SlideOut:true,$Easing:{$Top:$Jease$.$InCubic,$Opacity:$Jease$.$Linear},$Opacity:2},
+              {$Duration:1200,x:0.3,$Cols:2,$During:{$Left:[0.3,0.7]},$ChessMode:{$Column:3},$Easing:{$Left:$Jease$.$InCubic,$Opacity:$Jease$.$Linear},$Opacity:2},
+              {$Duration:1200,x:0.3,$Cols:2,$SlideOut:true,$ChessMode:{$Column:3},$Easing:{$Left:$Jease$.$InCubic,$Opacity:$Jease$.$Linear},$Opacity:2},
+              {$Duration:1200,y:0.3,$Rows:2,$During:{$Top:[0.3,0.7]},$ChessMode:{$Row:12},$Easing:{$Top:$Jease$.$InCubic,$Opacity:$Jease$.$Linear},$Opacity:2},
+              {$Duration:1200,y:0.3,$Rows:2,$SlideOut:true,$ChessMode:{$Row:12},$Easing:{$Top:$Jease$.$InCubic,$Opacity:$Jease$.$Linear},$Opacity:2},
+              {$Duration:1200,y:0.3,$Cols:2,$During:{$Top:[0.3,0.7]},$ChessMode:{$Column:12},$Easing:{$Top:$Jease$.$InCubic,$Opacity:$Jease$.$Linear},$Opacity:2},
+              {$Duration:1200,y:-0.3,$Cols:2,$SlideOut:true,$ChessMode:{$Column:12},$Easing:{$Top:$Jease$.$InCubic,$Opacity:$Jease$.$Linear},$Opacity:2},
+              {$Duration:1200,x:0.3,$Rows:2,$During:{$Left:[0.3,0.7]},$ChessMode:{$Row:3},$Easing:{$Left:$Jease$.$InCubic,$Opacity:$Jease$.$Linear},$Opacity:2},
+              {$Duration:1200,x:-0.3,$Rows:2,$SlideOut:true,$ChessMode:{$Row:3},$Easing:{$Left:$Jease$.$InCubic,$Opacity:$Jease$.$Linear},$Opacity:2},
+              {$Duration:1200,x:0.3,y:0.3,$Cols:2,$Rows:2,$During:{$Left:[0.3,0.7],$Top:[0.3,0.7]},$ChessMode:{$Column:3,$Row:12},$Easing:{$Left:$Jease$.$InCubic,$Top:$Jease$.$InCubic,$Opacity:$Jease$.$Linear},$Opacity:2},
+              {$Duration:1200,x:0.3,y:0.3,$Cols:2,$Rows:2,$During:{$Left:[0.3,0.7],$Top:[0.3,0.7]},$SlideOut:true,$ChessMode:{$Column:3,$Row:12},$Easing:{$Left:$Jease$.$InCubic,$Top:$Jease$.$InCubic,$Opacity:$Jease$.$Linear},$Opacity:2},
+              {$Duration:1200,$Delay:20,$Clip:3,$Assembly:260,$Easing:{$Clip:$Jease$.$InCubic,$Opacity:$Jease$.$Linear},$Opacity:2},
+              {$Duration:1200,$Delay:20,$Clip:3,$SlideOut:true,$Assembly:260,$Easing:{$Clip:$Jease$.$OutCubic,$Opacity:$Jease$.$Linear},$Opacity:2},
+              {$Duration:1200,$Delay:20,$Clip:12,$Assembly:260,$Easing:{$Clip:$Jease$.$InCubic,$Opacity:$Jease$.$Linear},$Opacity:2},
+              {$Duration:1200,$Delay:20,$Clip:12,$SlideOut:true,$Assembly:260,$Easing:{$Clip:$Jease$.$OutCubic,$Opacity:$Jease$.$Linear},$Opacity:2}
+            ];
+            
+            var jssor_1_options = {
+              $AutoPlay: true,
+              $SlideshowOptions: {
+                $Class: $JssorSlideshowRunner$,
+                $Transitions: jssor_1_SlideshowTransitions,
+                $TransitionsOrder: 1
+              },
+              $ArrowNavigatorOptions: {
+                $Class: $JssorArrowNavigator$
+              },
+              $ThumbnailNavigatorOptions: {
+                $Class: $JssorThumbnailNavigator$,
+                $Cols: 10,
+                $SpacingX: 8,
+                $SpacingY: 8,
+                $Align: 360
+              }
+            };
+            
+            var jssor_1_slider = new $JssorSlider$("jssor_1", jssor_1_options);
+            
+            //responsive code begin
+            //you can remove responsive code if you don't want the slider scales while window resizing
+            function ScaleSlider() {
+                var refSize = jssor_1_slider.$Elmt.parentNode.clientWidth;
+                if (refSize) {
+                    refSize = Math.min(refSize, 800);
+                    jssor_1_slider.$ScaleWidth(refSize);
+                }
+                else {
+                    window.setTimeout(ScaleSlider, 30);
+                }
+            }
+            ScaleSlider();
+            $(window).bind("load", ScaleSlider);
+            $(window).bind("resize", ScaleSlider);
+            $(window).bind("orientationchange", ScaleSlider);
+            //responsive code end
+        });
+    </script>
+
+    <style>
+        
+        /* jssor slider arrow navigator skin 05 css */
+        /*
+        .jssora05l                  (normal)
+        .jssora05r                  (normal)
+        .jssora05l:hover            (normal mouseover)
+        .jssora05r:hover            (normal mouseover)
+        .jssora05l.jssora05ldn      (mousedown)
+        .jssora05r.jssora05rdn      (mousedown)
+        */
+        .jssora05l, .jssora05r {
+            display: block;
+            position: absolute;
+            /* size of arrow element */
+            width: 40px;
+            height: 40px;
+            cursor: pointer;
+            background: url('img/a17.png') no-repeat;
+            overflow: hidden;
+        }
+        .jssora05l { background-position: -10px -40px; }
+        .jssora05r { background-position: -70px -40px; }
+        .jssora05l:hover { background-position: -130px -40px; }
+        .jssora05r:hover { background-position: -190px -40px; }
+        .jssora05l.jssora05ldn { background-position: -250px -40px; }
+        .jssora05r.jssora05rdn { background-position: -310px -40px; }
+
+        /* jssor slider thumbnail navigator skin 01 css */
+        /*
+        .jssort01 .p            (normal)
+        .jssort01 .p:hover      (normal mouseover)
+        .jssort01 .p.pav        (active)
+        .jssort01 .p.pdn        (mousedown)
+        */
+        .jssort01 .p {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 72px;
+            height: 72px;
+        }
+        
+        .jssort01 .t {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+        
+        .jssort01 .w {
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            width: 100%;
+            height: 100%;
+        }
+        
+        .jssort01 .c {
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            width: 68px;
+            height: 68px;
+            border: #000 2px solid;
+            box-sizing: content-box;
+            background: url('img/t01.png') -800px -800px no-repeat;
+            _background: none;
+        }
+        
+        .jssort01 .pav .c {
+            top: 2px;
+            _top: 0px;
+            left: 2px;
+            _left: 0px;
+            width: 68px;
+            height: 68px;
+            border: #000 0px solid;
+            _border: #fff 2px solid;
+            background-position: 50% 50%;
+        }
+        
+        .jssort01 .p:hover .c {
+            top: 0px;
+            left: 0px;
+            width: 70px;
+            height: 70px;
+            border: #fff 1px solid;
+            background-position: 50% 50%;
+        }
+        
+        .jssort01 .p.pdn .c {
+            background-position: 50% 50%;
+            width: 68px;
+            height: 68px;
+            border: #000 2px solid;
+        }
+        
+        * html .jssort01 .c, * html .jssort01 .pdn .c, * html .jssort01 .pav .c {
+            /* ie quirks mode adjust */
+            width /**/: 72px;
+            height /**/: 72px;
+        }
+        
+    </style>
+
+
+    <div id="jssor_1" style="position: relative; margin: 0 auto; top: 0px; left: 0px; width: 800px; height: 456px; overflow: hidden; visibility: hidden; background-color: #24262e;">
+        <!-- Loading Screen -->
+        <div data-u="loading" style="position: absolute; top: 0px; left: 0px;">
+            <div style="filter: alpha(opacity=70); opacity: 0.7; position: absolute; display: block; top: 0px; left: 0px; width: 100%; height: 100%;"></div>
+            <div style="position:absolute;display:block;background:url('img/loading.gif') no-repeat center center;top:0px;left:0px;width:100%;height:100%;"></div>
+        </div>
+        <div data-u="slides" style="cursor: default; position: relative; top: 0px; left: 0px; width: 800px; height: 356px; overflow: hidden;">
+            <div data-p="144.50" style="display: none;">
+                <img data-u="image" src="img/categories/sight/tambdi1.jpg" />
+                <img data-u="thumb" src="img/categories/sight/tambdi1.jpg" />
+            </div>
+            <div data-p="144.50" style="display: none;">
+                <img data-u="image" src="img/categories/sight/tambdi2.jpg" />
+                <img data-u="thumb" src="img/categories/sight/tambdi2.jpg" />
+            </div>
+            <div data-p="144.50" style="display: none;">
+                <img data-u="image" src="img/categories/sight/tambdi3.jpg" />
+                <img data-u="thumb" src="img/categories/sight/tambdi3.jpg" />
+            </div>
+            <div data-p="144.50" style="display: none;">
+                <img data-u="image" src="img/categories/sight/tambdi4.jpg" />
+                <img data-u="thumb" src="img/categories/sight/tambdi4.jpg" />
+            </div>
+            <div data-p="144.50" style="display: none;">
+                <img data-u="image" src="img/categories/sight/tambdi5.jpg" />
+                <img data-u="thumb" src="img/categories/sight/tambdi5.jpg" />
+            </div>
+            <div data-p="144.50" style="display: none;">
+                <img data-u="image" src="img/categories/sight/tambdi6.jpg" />
+                <img data-u="thumb" src="img/categories/sight/tambdi6.jpg" />
+            </div>
+            
+        </div>
+        <!-- Thumbnail Navigator -->
+        <div data-u="thumbnavigator" class="jssort01" style="position:absolute;left:0px;bottom:0px;width:800px;height:100px;" data-autocenter="1">
+            <!-- Thumbnail Item Skin Begin -->
+            <div data-u="slides" style="cursor: default;">
+                <div data-u="prototype" class="p">
+                    <div class="w">
+                        <div data-u="thumbnailtemplate" class="t"></div>
+                    </div>
+                    <div class="c"></div>
+                </div>
+            </div>
+            <!-- Thumbnail Item Skin End -->
+        </div>
+        <!-- Arrow Navigator -->
+        <span data-u="arrowleft" class="jssora05l" style="top:158px;left:8px;width:40px;height:40px;"></span>
+        <span data-u="arrowright" class="jssora05r" style="top:158px;right:8px;width:40px;height:40px;"></span>
+        <a href="http://www.jssor.com" style="display:none">Bootstrap Carousel</a>
+    </div>
+         </div>
+            </aside>
+            <aside id="things_to_do">
+               <h4>Things to do</h4>
+        <hr style="max-width: 1300px;">
+              <p>
+                  Amazing place to see Goan architectural monument.<br>
+                  Well known religious place.<br>
+                  
+              </p>
+          </aside>
+           <div style="font-size:20px;">Ratings & Reviews</div>
+            <hr style="max-width: 1300px;">
+            <div class="rw-ui-container"></div>
+          
+        </div>
+<!-- begin wwww.htmlcommentbox.com -->
+ <div id="HCB_comment_box"><a href="http://www.htmlcommentbox.com">Widget</a> is loading comments...</div>
+ <link rel="stylesheet" type="text/css" href="//www.htmlcommentbox.com/static/skins/bootstrap/twitter-bootstrap.css?v=0" />
+ <script type="text/javascript" id="hcb"> /*<!--*/ if(!window.hcb_user){hcb_user={};} (function(){var s=document.createElement("script"), l=hcb_user.PAGE || (""+window.location).replace(/'/g,"%27"), h="//www.htmlcommentbox.com";s.setAttribute("type","text/javascript");s.setAttribute("src", h+"/jread?page="+encodeURIComponent(l).replace("+","%2B")+"&opts=16862&num=10&ts=1467998923617");if (typeof s!="undefined") document.getElementsByTagName("head")[0].appendChild(s);})(); /*-->*/ </script>
+<!-- end www.htmlcommentbox.com -->
+    <!-- /#wrapper -->
+     <div class="details">
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-6">
+						<div class="contactinfo">
+							<ul class="nav nav-pills">
+								<li><a href="#"><i class="fa fa-phone"></i> +123456789</a></li>
+								<li><a href="#"><i class="fa fa-envelope"></i> ahpsvinfo@gmail.com</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="col-sm-6">
+						<div class="social-icons pull-right">
+							<ul class="nav navbar-nav">
+								<li><a href="#"><i class="fa fa-facebook"></i></a></li>
+								<li><a href="#"><i class="fa fa-twitter"></i></a></li>
+								<li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+								<li><a href="#"><i class="fa fa-dribbble"></i></a></li>
+								<li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+          </div>
+          	<div class="footer-bottom">
+			<div class="container">
+				<div class="row">
+					<h6>GOexplorAr</h6>
+				</div>
+			</div>
+		</div>
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+<script type="text/javascript">(function(d, t, e, m){
+    
+    // Async Rating-Widget initialization.
+    window.RW_Async_Init = function(){
+                
+        RW.init({
+            huid: "318602",
+            uid: "4cba40ea4c8ce01a7cab83407a18bdca",
+            options: { "style": "oxygen" } 
+        });
+        RW.render();
+    };
+        // Append Rating-Widget JavaScript library.
+    var rw, s = d.getElementsByTagName(e)[0], id = "rw-js",
+        l = d.location, ck = "Y" + t.getFullYear() + 
+        "M" + t.getMonth() + "D" + t.getDate(), p = l.protocol,
+        f = ((l.search.indexOf("DBG=") > -1) ? "" : ".min"),
+        a = ("https:" == p ? "secure." + m + "js/" : "js." + m);
+    if (d.getElementById(id)) return;              
+    rw = d.createElement(e);
+    rw.id = id; rw.async = true; rw.type = "text/javascript";
+    rw.src = p + "//" + a + "external" + f + ".js?ck=" + ck;
+    s.parentNode.insertBefore(rw, s);
+    }(document, new Date(), "script", "rating-widget.com/"));</script>
+    <!-- Menu Toggle Script -->
+    <script>
+    $("#menu-toggle").click(function(e) {
+        e.preventDefault();
+        $("#wrapper").toggleClass("toggled");
+    });
+    </script>
+    </body>
+<!-- javascript-->
+    <script src="js/jquery.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.easing.min.js"></script>
+    <script src="js/jquery.fittext.js"></script>
+    <script src="js/wow.min.js"></script>
+ 
+</body>
+</html>
